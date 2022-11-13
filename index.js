@@ -1,8 +1,9 @@
 const path = require("path");
 const express = require("express");
-const app = express(); // create express app
 const cors = require("cors");
+const app = express(); // create express app
 
+app.use(cors);
 app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 // app.use(
@@ -10,7 +11,6 @@ app.use(express.static("public"));
 //     origin: "*",
 //   })
 // );
-app.use(cors);
 
 app.get("/", (req, res) => {
   res.send("This is from express.js");
