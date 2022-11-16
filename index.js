@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-// app.use(cors);
+app.use(cors());
 app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 
@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
   res.send("This is from express.js");
 });
 
-app.get("/api/Bollywood.json", cors(), (req, res) => {
+app.get("/api/Bollywood.json", (req, res) => {
   res.status(200);
 });
 
