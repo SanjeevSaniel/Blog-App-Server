@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("This is from express.js");
+  res.send("This is from Express");
 });
 
 app.get("/api/Bollywood.json", (req, res) => {
