@@ -43,7 +43,7 @@ const importData = async (Model, data) => {
   }
 };
 
-// importData(Article, articlesData);
+importData(Article, articlesData);
 // importData(HomeLatest, homeLatestData);
 // importData(HomeSlider, homeSliderData);
 // importData(HomeAds, homeAdsData);

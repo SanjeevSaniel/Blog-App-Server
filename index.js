@@ -85,6 +85,24 @@ app.get("/HomeAds", (req, res) => {
   getHomeAds();
 });
 
+app.get("/HomeSlider", (req, res) => {
+  const getHomeSliderImages = async () => {
+    const articles = await HomeSlider.find();
+    res.send(articles);
+  };
+
+  getHomeSliderImages();
+});
+
+app.get("/HomeTopPosts", (req, res) => {
+  const getHomeTopPosts = async () => {
+    const articles = await HomeTopPosts.find();
+    res.send(articles);
+  };
+
+  getHomeTopPosts();
+});
+
 app.get("/api/Bollywood.json", (req, res) => {
   res.status(200);
 });
