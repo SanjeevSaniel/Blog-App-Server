@@ -49,6 +49,18 @@ const {
   technologyTopPosts,
 } = require("./Utils/Technology");
 
+const {
+  FitnessArticles,
+  FitnessAds,
+  FitnessTopPosts,
+} = require("./models/FitnessModels");
+
+const {
+  fitnessArticles,
+  fitnessAds,
+  fitnessTopPosts,
+} = require("./Utils/Fitness");
+
 const mongoose = require("mongoose");
 
 const url = `mongodb+srv://sanjeev:sanjeev77@cluster0.tl5agnc.mongodb.net/blogData?retryWrites=true&w=majority`;
@@ -96,3 +108,7 @@ const importData = async (Model, data) => {
 // importData(TechnologyArticles, technologyArticles);
 // importData(TechnologyAds, technologyAds);
 // importData(TechnologyTopPosts, technologyTopPosts);
+
+// importData(FitnessArticles, fitnessArticles);
+// importData(FitnessAds, fitnessAds);
+// importData(FitnessTopPosts, fitnessTopPosts);
