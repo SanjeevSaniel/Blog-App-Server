@@ -1,17 +1,107 @@
+const {
+  Article,
+  HomeLatest,
+  HomeAds,
+  HomeSlider,
+  HomeTopPosts,
+} = require("./models/HomeModels");
+
 const path = require("path");
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 const app = express();
+
+const database = "blogData";
+
+mongoose
+  .connect(
+    `mongodb+srv://sanjeev:sanjeev77@cluster0.tl5agnc.mongodb.net/${database}?retryWrites=true&w=majority`,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => console.log("Connected to MongoDB..."))
+  .catch((error) => console.error("Couldn't connect to MongoDB...", error));
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("This is from Express");
+  res.status(200).send("This is from Express");
+});
+
+// const Article = mongoose.model(
+//   "Article",
+//   mongoose.Schema({
+//     photoUrl: String,
+//     link: String,
+//     title: String,
+//     description: String,
+//     category: String,
+//     date: String,
+//   })
+// );
+
+app.get("/Articles", (req, res) => {
+  const getArticles = async () => {
+    const articles = await Article.find();
+    res.send(articles);
+  };
+
+  getArticles();
+});
+
+// const HomeLatest = mongoose.model(
+//   "HomeLatest",
+//   mongoose.Schema({
+//     url: String,
+//     alt: String,
+//     caption: String,
+//     about: String,
+//     category: String,
+//     date: String,
+//     link: String,
+//   })
+// );
+
+app.get("/HomeLatest", (req, res) => {
+  const getHomeLatest = async () => {
+    const articles = await HomeLatest.find();
+    res.send(articles);
+  };
+
+  getHomeLatest();
+});
+
+app.get("/HomeAds", (req, res) => {
+  const getHomeAds = async () => {
+    const articles = await HomeAds.find();
+    res.send(articles);
+  };
+
+  getHomeAds();
 });
 
 app.get("/api/Bollywood.json", (req, res) => {
+  res.status(200);
+});
+
+app.get("/api/Hollywood.json", (req, res) => {
+  res.status(200);
+});
+
+app.get("/api/Food.json", (req, res) => {
+  res.status(200);
+});
+
+app.get("/api/Fitness.json", (req, res) => {
+  res.status(200);
+});
+
+app.get("/api/Technology.json", (req, res) => {
   res.status(200);
 });
 
