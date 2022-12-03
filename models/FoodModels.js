@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const FoodArticles = mongoose.model(
-  "FitnessArticles",
+  "FoodArticles",
   mongoose.Schema({
     photoUrl: String,
     link: String,
@@ -13,7 +13,7 @@ const FoodArticles = mongoose.model(
 );
 
 const FoodAds = mongoose.model(
-  "FitnessAds",
+  "FoodAds",
   mongoose.Schema({
     title: String,
     link: String,
@@ -21,7 +21,7 @@ const FoodAds = mongoose.model(
 );
 
 const FoodTopPosts = mongoose.model(
-  "FitnessTopPosts",
+  "FoodTopPosts",
   mongoose.Schema({
     imageURL: String,
     link: String,
