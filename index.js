@@ -97,30 +97,10 @@ app.get("/HomeSlider", (req, res) => {
 app.get("/HomeTopPosts", (req, res) => {
   const getHomeTopPosts = async () => {
     const articles = await HomeTopPosts.find();
-    res.status(200).send(articles);
+    res.send(articles);
   };
 
   getHomeTopPosts();
-});
-
-app.get("/api/Bollywood.json", (req, res) => {
-  res.status(200);
-});
-
-app.get("/api/Hollywood.json", (req, res) => {
-  res.status(200);
-});
-
-app.get("/api/Food.json", (req, res) => {
-  res.status(200);
-});
-
-app.get("/api/Fitness.json", (req, res) => {
-  res.status(200);
-});
-
-app.get("/api/Technology.json", (req, res) => {
-  res.status(200);
 });
 
 // app.use((req, res, next) => {

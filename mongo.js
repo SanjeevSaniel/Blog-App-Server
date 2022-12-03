@@ -13,6 +13,17 @@ const {
   homeTopPostsData,
 } = require("./Utils/Home");
 
+const {
+  BollywoodArticles,
+  BollywoodAds,
+  BollywoodTopPosts,
+} = require("./models/BollywoodModels");
+const {
+  bollywoodArticles,
+  bollywoodAds,
+  bollywoodTopPosts,
+} = require("./Utils/Bollywood");
+
 const mongoose = require("mongoose");
 
 const url = `mongodb+srv://sanjeev:sanjeev77@cluster0.tl5agnc.mongodb.net/blogData?retryWrites=true&w=majority`;
@@ -43,8 +54,12 @@ const importData = async (Model, data) => {
   }
 };
 
-importData(Article, articlesData);
+// importData(Article, articlesData);
 // importData(HomeLatest, homeLatestData);
 // importData(HomeSlider, homeSliderData);
 // importData(HomeAds, homeAdsData);
 // importData(HomeTopPosts, homeTopPostsData);
+
+// importData(BollywoodArticles, bollywoodArticles);
+// importData(BollywoodAds, bollywoodAds);
+// importData(BollywoodTopPosts, bollywoodTopPosts);
