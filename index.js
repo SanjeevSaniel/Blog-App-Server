@@ -136,6 +136,8 @@ app.get("/BollywoodTopPosts", (req, res) => {
   getBollywoodTopPosts();
 });
 
+
+
 // app.use((req, res, next) => {
 //   res.sendFile(path.join(__dirname, "..", "build", "index.html"));
 // });
