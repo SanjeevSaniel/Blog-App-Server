@@ -6,6 +6,12 @@ const {
   HomeTopPosts,
 } = require("./models/HomeModels");
 
+const {
+  BollywoodArticles,
+  BollywoodAds,
+  BollywoodTopPosts,
+} = require("./models/BollywoodModels");
+
 const path = require("path");
 const express = require("express");
 const cors = require("cors");
@@ -101,6 +107,33 @@ app.get("/HomeTopPosts", (req, res) => {
   };
 
   getHomeTopPosts();
+});
+
+app.get("/BollywoodArticles", (req, res) => {
+  const getBollywoodArticles = async () => {
+    const articles = await BollywoodArticles.find();
+    res.send(articles);
+  };
+
+  getBollywoodArticles();
+});
+
+app.get("/BollywoodAds", (req, res) => {
+  const getBollywoodAds = async () => {
+    const articles = await BollywoodAds.find();
+    res.send(articles);
+  };
+
+  getBollywoodAds();
+});
+
+app.get("/BollywoodTopPosts", (req, res) => {
+  const getBollywoodTopPosts = async () => {
+    const articles = await BollywoodTopPosts.find();
+    res.send(articles);
+  };
+
+  getBollywoodTopPosts();
 });
 
 // app.use((req, res, next) => {

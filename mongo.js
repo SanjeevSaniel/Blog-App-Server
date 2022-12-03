@@ -18,6 +18,7 @@ const {
   BollywoodAds,
   BollywoodTopPosts,
 } = require("./models/BollywoodModels");
+
 const {
   bollywoodArticles,
   bollywoodAds,
