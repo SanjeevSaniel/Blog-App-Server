@@ -97,7 +97,7 @@ app.get("/HomeSlider", (req, res) => {
 app.get("/HomeTopPosts", (req, res) => {
   const getHomeTopPosts = async () => {
     const articles = await HomeTopPosts.find();
-    res.send(articles);
+    res.status(200).send(articles);
   };
 
   getHomeTopPosts();
