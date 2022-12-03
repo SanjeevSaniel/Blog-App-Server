@@ -19,10 +19,10 @@ const {
 } = require("./models/HollywoodModels");
 
 const {
-  HollywoodArticles,
-  HollywoodAds,
-  HollywoodTopPosts,
-} = require("./models/HollywoodModels");
+  TechnologyArticles,
+  TechnologyAds,
+  TechnologyTopPosts,
+} = require("./models/TechnologyModels");
 
 const path = require("path");
 const express = require("express");
