@@ -238,7 +238,7 @@ app.get("/FitnessTopPosts", (req, res) => {
 });
 
 app.get("/FoodArticles", (req, res) => {
-  const getFitnessArticles = async () => {
+  const getFoodArticles = async () => {
     const articles = await FoodArticles.find();
     res.send(articles);
   };
