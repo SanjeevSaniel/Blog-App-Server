@@ -32,6 +32,8 @@ const {
 
 const { FoodArticles, FoodAds, FoodTopPosts } = require("./models/FoodModels");
 
+const { RelatedPosts } = require("./models/RelatedPostsModel");
+
 const path = require("path");
 const express = require("express");
 const cors = require("cors");
@@ -262,6 +264,15 @@ app.get("/FoodTopPosts", (req, res) => {
   };
 
   getFoodTopPosts();
+});
+
+app.get("/RelatedPosts", (req, res) => {
+  const getRelatedPosts = async () => {
+    const articles = await RelatedPosts.find();
+    res.send(articles);
+  };
+
+  getRelatedPosts();
 });
 
 // app.use((req, res, next) => {

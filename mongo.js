@@ -65,6 +65,9 @@ const { FoodArticles, FoodAds, FoodTopPosts } = require("./models/FoodModels");
 
 const { foodArticles, foodAds, foodTopPosts } = require("./Utils/Food");
 
+const { RelatedPosts } = require("./models/RelatedPostsModel");
+const { relatedPosts } = require("./Utils/RelatedPosts");
+
 const mongoose = require("mongoose");
 
 const url = `mongodb+srv://sanjeev:sanjeev77@cluster0.tl5agnc.mongodb.net/blogData?retryWrites=true&w=majority`;
@@ -120,3 +123,5 @@ const importData = async (Model, data) => {
 // importData(FoodArticles, foodArticles);
 // importData(FoodAds, foodAds);
 // importData(FoodTopPosts, foodTopPosts);
+
+// importData(RelatedPosts, relatedPosts);
