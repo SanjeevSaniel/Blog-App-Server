@@ -55,18 +55,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-// const Article = mongoose.model(
-//   "Article",
-//   mongoose.Schema({
-//     photoUrl: String,
-//     link: String,
-//     title: String,
-//     description: String,
-//     category: String,
-//     date: String,
-//   })
-// );
-
 app.get("/Articles", (req, res) => {
   const getArticles = async () => {
     const articles = await Article.find();
