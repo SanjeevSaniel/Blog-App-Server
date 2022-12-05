@@ -5,33 +5,27 @@ const {
   HomeSlider,
   HomeTopPosts,
 } = require("./models/HomeModels");
-
 const {
   BollywoodArticles,
   BollywoodAds,
   BollywoodTopPosts,
 } = require("./models/BollywoodModels");
-
 const {
   HollywoodArticles,
   HollywoodAds,
   HollywoodTopPosts,
 } = require("./models/HollywoodModels");
-
 const {
   TechnologyArticles,
   TechnologyAds,
   TechnologyTopPosts,
 } = require("./models/TechnologyModels");
-
 const {
   FitnessArticles,
   FitnessAds,
   FitnessTopPosts,
 } = require("./models/FitnessModels");
-
 const { FoodArticles, FoodAds, FoodTopPosts } = require("./models/FoodModels");
-
 const { RelatedPosts } = require("./models/RelatedPostsModel");
 
 const path = require("path");

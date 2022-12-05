@@ -1,39 +1,40 @@
 # Blog-App-Server
-React App Repository - https://github.com/SanjeevSaniel/Blog-App
 
-  -- API Links
-  
+React Blog App Preview - https://react-blog-app-w-server.netlify.app/
+React Blog App Repository - https://github.com/SanjeevSaniel/Blog-App
+React Blog App Server Repository - https://github.com/SanjeevSaniel/Blog-App-Server
+
+-- API Links
+
     # Home
-    - Ads [https://prepbytes-blog-app-server.herokuapp.com/api/HomeAds.json]
-    - Latest [https://prepbytes-blog-app-server.herokuapp.com/api/ArticlesHorizontal.json]
-    - Articles [https://prepbytes-blog-app-server.herokuapp.com/api/Articles.json]
-    - Slider Images [https://prepbytes-blog-app-server.herokuapp.com/api/SliderImages.json]
-    - Top Posts [https://prepbytes-blog-app-server.herokuapp.com/api/TopArticles.json]
-    - Related Posts [https://prepbytes-blog-app-server.herokuapp.com/api/RelatedPosts.json]
-  
+    - Ads [https://good-blue-leopard-gown.cyclic.app/HomeAds]
+    - Latest [https://good-blue-leopard-gown.cyclic.app/HomeLatest]
+    - Articles [https://good-blue-leopard-gown.cyclic.app/Articles]
+    - Slider Images [https://good-blue-leopard-gown.cyclic.app/HomeSlider]
+    - Top Posts [https://good-blue-leopard-gown.cyclic.app/HomeTopPosts]
+    - Related Posts [https://good-blue-leopard-gown.cyclic.app/RelatedPosts]
+
     # Bollywood
-    - Articles [https://prepbytes-blog-app-server.herokuapp.com/api/Bollywood.json]
-    - Ads [https://prepbytes-blog-app-server.herokuapp.com/api/BollywoodAds.json]
-    - Top Posts [https://prepbytes-blog-app-server.herokuapp.com/api/BollywoodTopPosts.json]
-    
+    - Articles [https://good-blue-leopard-gown.cyclic.app/BollywoodArticles]
+    - Ads [https://good-blue-leopard-gown.cyclic.app/BollywoodAds]
+    - Top Posts [https://good-blue-leopard-gown.cyclic.app/BollywoodTopPosts]
+
     # Technology
-    - Articles [https://prepbytes-blog-app-server.herokuapp.com/api/Technology.json]
-    - Ads [https://prepbytes-blog-app-server.herokuapp.com/api/TechnologyAds.json]
-    - Top Posts [https://prepbytes-blog-app-server.herokuapp.com/api/TechnologyTopPosts.json]
-    
+    - Articles [https://good-blue-leopard-gown.cyclic.app/TechnologyArticles]
+    - Ads [https://good-blue-leopard-gown.cyclic.app/TechnologyAds]
+    - Top Posts [https://good-blue-leopard-gown.cyclic.app/TechnologyTopPosts]
+
     # Hollywood
-    - Hollywood [https://prepbytes-blog-app-server.herokuapp.com/api/Hollywood.json]
-    - Ads [https://prepbytes-blog-app-server.herokuapp.com/api/HollywoodAds.json]
-    - Top Posts [https://prepbytes-blog-app-server.herokuapp.com/api/HollywoodTopPosts.json]
-    
+    - Articles [https://good-blue-leopard-gown.cyclic.app/HollywoodArticles]
+    - Ads [https://good-blue-leopard-gown.cyclic.app/HollywoodAds]
+    - Top Posts [https://good-blue-leopard-gown.cyclic.app/HollywoodTopPosts]
+
     # Fitness
-    - Articles [https://prepbytes-blog-app-server.herokuapp.com/api/Fitness.json]
-    - Ads [https://prepbytes-blog-app-server.herokuapp.com/api/FitnessAds.json]
-    - Top Posts [https://prepbytes-blog-app-server.herokuapp.com/api/FitnessTopPosts.json]
-    
+    - Articles [https://good-blue-leopard-gown.cyclic.app/FitnessArticles]
+    - Ads [https://good-blue-leopard-gown.cyclic.app/FitnessAds]
+    - Top Posts [https://good-blue-leopard-gown.cyclic.app/FitnessTopPosts]
+
     # Food
-    - Articles [https://prepbytes-blog-app-server.herokuapp.com/api/Food.json]
-    - Ads [https://prepbytes-blog-app-server.herokuapp.com/api/FoodAds.json]
-    - Top Posts [https://prepbytes-blog-app-server.herokuapp.com/api/FoodTopPosts.json]
-    
-    
+    - Articles [https://good-blue-leopard-gown.cyclic.app/FoodArticles]
+    - Ads [https://good-blue-leopard-gown.cyclic.app/FoodAds]
+    - Top Posts [https://good-blue-leopard-gown.cyclic.app/FoodTopPosts]
