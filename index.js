@@ -52,7 +52,7 @@ app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.status(200).send("This is from Express");
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 // const Article = mongoose.model(
