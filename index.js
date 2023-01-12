@@ -14,9 +14,14 @@ const FoodRouter = require("./routes/foodRoutes");
 
 const database = "blogData";
 
+const credentials = {
+  username: "sanjeev",
+  password: "sanjeev77",
+};
+
 mongoose
   .connect(
-    `mongodb+srv://sanjeev:sanjeev77@cluster0.tl5agnc.mongodb.net/${database}?retryWrites=true&w=majority`,
+    `mongodb+srv://${credentials.username}:${credentials.password}@cluster0.tl5agnc.mongodb.net/${database}?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
