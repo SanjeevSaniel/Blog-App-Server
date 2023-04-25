@@ -5,7 +5,7 @@ const app = express();
 
 const corsOptions = {
   // origin: "http://localhost:3000",
-  origin: "https://react-blog-app-8.netlify.app/",
+  accessControlAllowOrigin: "https://react-blog-app-8.netlify.app/",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
