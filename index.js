@@ -10,20 +10,6 @@ const app = express();
 //   optionSuccessStatus: 200,
 // };
 
-const whitelist = [
-  "http://localhost:3000",
-  "https://react-blog-app-8.netlify.app/",
-];
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-};
-
 const Router = require("./routes/defaultRoutes");
 const HomeRouter = require("./routes/homeRoutes");
 const BollywoodRouter = require("./routes/bollywoodRoutes");
@@ -34,8 +20,8 @@ const FoodRouter = require("./routes/foodRoutes");
 
 const database = require("./configurations/databaseConfig");
 
-// app.use(cors());
-app.use(cors(corsOptions));
+app.use(cors());
+// app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 app.use(express.json());
