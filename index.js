@@ -3,12 +3,12 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const corsOptions = {
-  // origin: "http://localhost:3000",
-  accessControlAllowOrigin: "https://react-blog-app-8.netlify.app/",
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
-};
+// const corsOptions = {
+//   // origin: "http://localhost:3000",
+//   // accessControlAllowOrigin: "https://react-blog-app-8.netlify.app/",
+//   credentials: true, //access-control-allow-credentials:true
+//   optionSuccessStatus: 200,
+// };
 
 const Router = require("./routes/defaultRoutes");
 const HomeRouter = require("./routes/homeRoutes");
@@ -20,7 +20,8 @@ const FoodRouter = require("./routes/foodRoutes");
 
 const database = require("./configurations/databaseConfig");
 
-app.use(cors(corsOptions));
+app.use(cors());
+// app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 app.use(express.json());
