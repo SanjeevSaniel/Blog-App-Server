@@ -26,7 +26,8 @@ app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 app.use(express.json());
 
-database.connectToCompass();
+// database.connectToCompass();
+database.connectToAtlas();
 
 app.use(Router);
 app.use(HomeRouter);
