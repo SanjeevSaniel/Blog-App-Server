@@ -3,11 +3,25 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
+// const corsOptions = {
+//   // origin: "http://localhost:3000",
+//   accessControlAllowOrigin: "*",
+//   credentials: true, //access-control-allow-credentials:true
+//   optionSuccessStatus: 200,
+// };
+
+const whitelist = [
+  "http://localhost:3000",
+  "https://react-blog-app-8.netlify.app/",
+];
 const corsOptions = {
-  // origin: "http://localhost:3000",
-  accessControlAllowOrigin: "*",
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
 };
 
 const Router = require("./routes/defaultRoutes");
